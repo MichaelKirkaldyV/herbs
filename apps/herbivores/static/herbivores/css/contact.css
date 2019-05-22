@@ -240,3 +240,203 @@ p {
 li {
 	font-family: 'colus', sans-serif;
 }
+
+/*-----------------------------MEDIA QUERIES------------------------------*/
+
+@media only screen and (max-width: 480px){
+     /* we will set these stylings only if the device is a screen with a width of 480px or less */
+
+     .container {
+     	width: 95%;
+     	height: 100%;
+     }
+
+     .header {
+        width: 100%;
+     }
+
+      ul {
+     	width: 109%;
+     }
+
+     /*-------------------BODY---------------------*/
+ 
+     .title h1 {
+     	width: 27%;
+     }
+
+     h1.inquery-title {
+     	width: 55%;
+     }
+
+     .title {
+     	width: 100%;
+     }
+
+     .body {
+     	width: 100%;
+     	height: 90%;
+     }
+
+ 	 .input-length, .name-length {
+ 		width: 290px;
+ 	}
+
+ 	div.last-name, div.first-name {
+ 		display: block;
+ 	}
+
+ 	.submit {
+ 		display: block;
+ 		margin-left: 0;
+ 	}
+
+ 	label {
+ 		font-size: 18px;
+ 	}
+
+ 	.form {
+ 		margin-left: 0;
+ 		margin-bottom: 10px;
+ 	}
+
+ 	.feedback-box {
+ 		margin-left: 0;
+ 	}
+
+ 	.feedback-box h1 {
+ 		margin-top: 135px;
+ 	}
+
+ 	.feedback {
+ 		width: 75%;
+ 	}
+
+ 	label.l-name-margin {
+ 		margin-left: 0;
+ 	}
+
+ 	.l-name-margin {
+    	margin-left: 0px;
+	}
+
+	/*---------------------------------FOOTER----------------------------------*/
+
+     .footer {
+     	width: 100%;
+     	height: 310px;
+     	margin-top: 40px;
+     }
+
+     div.footer h2 {
+     	margin-top: 20px;
+     }
+
+     .info2 {
+     	display: none;
+     }
+
+     .footer-titles {
+     	display: none;
+     }
+
+     .info {
+     	margin-left: 35px;
+     }
+
+     .valet {
+     	font-size: 15px;
+     }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 760px){
+
+	.container {
+		width: 95%;
+		height: 100%;
+	}
+
+	.header {
+		width: 100%;
+	}
+
+/*------------------------------BODY------------------------*/
+
+	.body {
+		width: 100%;
+		height: 100%;
+
+	}
+
+	div.feedback-box h1 {
+		margin-top: 105px;
+	}
+
+	form {
+		margin-right: 10px;
+	}
+
+	.feedback-box {
+		margin-left: 70px;
+	}
+
+	/*------------------------------FOOTER-------------------------*/
+
+	.footer {
+		width: 95%;
+		height: 1020px;
+		padding: 20px;
+		margin-top: 50px;
+	}
+
+	.footer-titles {
+		display: none;
+	}
+
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1024px){
+
+	.container {
+		width: 95%;
+		height: 100%;
+	}
+
+	.header {
+		width: 100%;
+	}
+/*-----------------------------BODY--------------------------*/
+
+	.body {
+		width: 100%;
+		height: 100%;
+	}
+
+	div.feedback-box h1 {
+		margin-top: 105px;
+	}
+
+	.feedback-box {
+		margin-left: 70px;
+	}
+
+/*----------------------------FOOTER------------------------------*/
+
+	.footer {
+		width: 95%;
+		height: 800px;
+		padding: 20px;
+		margin-top: 50px;
+	}
+
+	.footer-titles {
+		display: none;
+	}
+
+	.info2 {
+		font-size: 15px;
+		margin-left: 20px;
+		display: inline;
+	}
+}

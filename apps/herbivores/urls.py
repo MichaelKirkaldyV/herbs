@@ -10,6 +10,8 @@ urlpatterns = [
   url(r'^dessert$', views.dessert_menu),
   url(r'^reservations$', views.reservations),
   url(r'^process_reservation$', views.process_reservation),
+  url(r'^process_inquery$', views.process_inquery),
+  url(r'^process_feedback$', views.process_feedback),
   url(r'^about$', views.team),
   url(r'^contact$', views.contact),
   url(r'^coffee$', views.coffee),

@@ -184,13 +184,18 @@ li {
 }
 
 
-/*-----------------------------RESPONSIVE------------------------------*/
+/*-----------------------------MEDIA QUERIES------------------------------*/
 
 @media only screen and (max-width: 480px){
      /* we will set these stylings only if the device is a screen with a width of 480px or less */
 
+     .container {
+     	width: 95%;
+     	height: 100%;
+     }
+
      .header {
-        width: 27%;
+        width: 100%;
      }
 
      .title h1 {
@@ -207,18 +212,90 @@ li {
      }
 
      .body {
-     	width: 30%;
+     	width: 100%;
      }
 
      .footer {
-     	width: 28%;
+     	width: 100%;
+     	height: 310px;
+     }
+
+     div.footer h2 {
+     	margin-top: 20px;
      }
 
      .info2 {
      	display: none;
      }
 
-     .valet {
-     	font-size: 12px;
+     .footer-titles {
+     	display: none;
      }
+
+     .info {
+     	margin-left: 35px;
+     }
+
+     .valet {
+     	font-size: 15px;
+     }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 760px){
+
+	.container {
+		width: 95%;
+		height: 100%;
+	}
+
+	.header {
+		width: 100%;
+	}
+
+	.body {
+		width: 100%;
+	}
+
+	.footer {
+		width: 95%;
+		height: 575px;
+		padding: 20px;
+	}
+
+	.footer-titles {
+		display: none;
+	}
+
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1024px){
+
+	.container {
+		width: 95%;
+		height: 100%;
+	}
+
+	.header {
+		width: 100%;
+	}
+
+	.body {
+		width: 100%;
+	}
+
+	.footer {
+		width: 95%;
+		height: 785px;
+		padding: 20px;
+	}
+
+	.footer-titles {
+		display: none;
+	}
+
+	.info2 {
+		font-size: 15px;
+		margin-left: 20px;
+		display: inline;
+	}
 }

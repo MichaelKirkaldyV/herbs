@@ -28,12 +28,6 @@
 	margin-bottom: 15px;
 }
 
-.body {
-	width: 1304px;
-	height: 400px;
-	margin-bottom: 15px;
-}
-
 .title h1 {
 	margin-top: 20px;
 	margin-left: 55px;
@@ -269,4 +263,223 @@ p {
 
 li {
 	font-family: 'colus', sans-serif;
+}
+
+/*-----------------------------MEDIA QUERIES------------------------------*/
+
+@media only screen and (max-width: 480px){
+     /* we will set these stylings only if the device is a screen with a width of 480px or less */
+
+     .container {
+     	width: 95%;
+     	height: 100%;
+     }
+
+     .header {
+        width: 100%;
+     }
+
+      ul {
+     	width: 109%;
+     }
+
+     .title h1 {
+     	width: 27%;
+     }
+
+     .title {
+     	width: 100%;
+     }
+     /*-------------------BODY---------------------*/
+
+     div.body {
+     	width: 100%;
+     	height: 90%;
+     }
+
+     div.body2 {
+     	width: 100%;
+     	height: 90%;
+     }
+
+     div.body3 {
+     	width: 100%;
+     	height: 90%;
+     }
+
+     div.body4 {
+     	width: 100%;
+     	height: 100%;
+     }
+
+     div.title-photo2 {
+     	display: none;
+     }
+
+     div.title-photo {
+     	display: none;
+     }
+
+     div.title-photo3 {
+     	display: none;
+     }
+
+     div.title-photo4 {
+     	display: none;
+     }
+
+	/*---------------------------------FOOTER----------------------------------*/
+
+     .footer {
+     	width: 100%;
+     	height: 310px;
+     	margin-top: 40px;
+     }
+
+     div.footer h2 {
+     	margin-top: 20px;
+     }
+
+     .info2 {
+     	display: none;
+     }
+
+     .footer-titles {
+     	display: none;
+     }
+
+     .info {
+     	margin-left: 35px;
+     }
+
+     .valet {
+     	font-size: 15px;
+     }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 760px){
+
+	.container {
+		width: 95%;
+		height: 100%;
+	}
+
+	.header {
+		width: 100%;
+	}
+
+/*------------------------------BODY------------------------*/
+
+	div.body {
+		width: 100%;
+		height: 100%;
+	}
+
+	.title-photo2 {
+		width: 100%;
+	}
+	
+
+	div.body2 {
+		width: 100%;
+		height: 100%;
+	}
+
+	div.body4 {
+		width: 100%;
+		height: 100%;
+	}
+
+	.title-photo {
+		width: 100%;
+	}
+
+	.title-photo3 {
+		width: 100%;
+	}
+
+	.title-photo4 {
+		width: 100%;
+	}
+
+	/*------------------------------FOOTER-------------------------*/
+
+	.footer {
+		width: 95%;
+		height: 1020px;
+		padding: 20px;
+	}
+
+	.footer-titles {
+		display: none;
+	}
+
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1024px){
+
+	.container {
+		width: 95%;
+		height: 100%;
+	}
+
+	.header {
+		width: 100%;
+	}
+/*-----------------------------BODY--------------------------*/
+
+	.body {
+		width: 100%;
+		height: 100%;
+	}
+
+	div.body2 {
+		width: 100%;
+		height: 100%;
+	}
+
+	div.body3 {
+		width: 100%;
+		height: 100%;
+	}
+
+	div.body4 {
+		width: 100%;
+		height: 100%;
+	}
+
+	.title-photo {
+		width: 100%;
+	}
+
+	.title-photo2 {
+		width: 100%;
+	}
+
+	.title-photo3 {
+		width: 100%;
+	}
+
+	.title-photo4 {
+		width: 100%;
+	}
+
+/*----------------------------FOOTER------------------------------*/
+
+	.footer {
+		width: 95%;
+		height: 800px;
+		padding: 20px;
+	}
+
+	.footer-titles {
+		display: none;
+	}
+
+	.info2 {
+		font-size: 15px;
+		margin-left: 20px;
+		display: inline;
+	}
 }

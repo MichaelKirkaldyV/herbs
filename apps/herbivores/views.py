@@ -56,6 +56,45 @@ def process_reservation(request):
 		print "date:", date
 		return redirect('/')
 
+def process_inquery(request):
+	errors = Query.objects.validate_query(request.POST)
+
+	if len(errors):
+		for tag, error in errors.iteritems():
+			messages.error(request, error)
+		return redirect('/contact')
+
+	else:
+		firstname = request.POST['first_name']
+		lastname = request.POST['last_name']
+		email = request.POST['email']
+		subject = request.POST['subject']
+		message = request.POST['message']
+		query = Query.objects.create(firstname=firstname, lastname=lastname, email=email, subject=subject, message=message)
+		print "Query created"
+		print "first Name:", firstname
+		print "Last Name:", lastname
+		print "email:", email
+		print "subject:", subject
+		print "message:", message
+		return redirect('/')
+
+def process_feedback(request):
+	errors = Feedback.objects.validate_feedback(request.POST)
+
+	if len(errors):
+		for tag, error in errors.iteritems():
+			messages.error(request, error)
+		return redirect('/contact')
+
+	else:
+		message = request.POST['message']
+		feedback = Feedback.objects.create(message=message)
+		print "Feedback created"
+		print "message:", message
+		return redirect('/')
+
+
 def team(request):
 	return render(request, 'herbivores/team.html')
 

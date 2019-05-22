@@ -23,7 +23,7 @@ class ReservationManager(models.Manager):
 
 		return errors
 
-
+class FeedbackManager(models.Manager):
 	def validate_feedback(request, postData):
 		errors = {}
 
@@ -32,6 +32,7 @@ class ReservationManager(models.Manager):
 
 		return errors
 
+class QueryManager(models.Manager):
 	def validate_query(request, postData):
 		errors = {}
 
@@ -64,6 +65,9 @@ class Reservation(models.Model):
 
 class Feedback(models.Model):
 	message = models.CharField(max_length=150)
+	created_at = models.DateTimeField(auto_now_add=True)
+	updated_at = models.DateTimeField(auto_now=True)
+	objects = FeedbackManager()
 
 class Query(models.Model):
 	firstname = models.CharField(max_length=20)
@@ -71,3 +75,4 @@ class Query(models.Model):
 	email = models.CharField(max_length=30)
 	subject = models.CharField(max_length=30)
 	message = models.CharField(max_length=150)
+	objects = QueryManager()
