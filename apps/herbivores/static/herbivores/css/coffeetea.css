@@ -30,7 +30,7 @@
 
 .body {
 	width: 1304px;
-	height: 475px;
+	height: 840px;
 	margin-bottom: 15px;
 }
 
@@ -88,6 +88,16 @@ span {
     color: #706f6f;
     font-size: 17px;
 }
+
+.title-photo {
+	height: 350px;
+	width: 1304px;
+	background-image: url('../images/tea.jpg');
+	background-size: cover;
+	margin-bottom: 30px;
+}
+
+
 
 
 /*-------------------------------------FOOTER---------------------------------*/
@@ -228,6 +238,10 @@ li {
      	margin-left: 0;
      }
 
+     .title-photo {
+     	display: none;
+     }
+
 
 	/*---------------------------------FOOTER----------------------------------*/
 
@@ -285,6 +299,10 @@ li {
 		display: inline-block;
 	}
 
+	.title-photo {
+		width: 100%;
+	}
+
 	/*------------------------------FOOTER-------------------------*/
 
 	.footer {
@@ -320,6 +338,10 @@ li {
 		width: 45%;
 		margin-left: 0;
 		display: inline-block;
+	}
+
+	.title-photo {
+		width: 100%;
 	}
 
 /*----------------------------FOOTER------------------------------*/
