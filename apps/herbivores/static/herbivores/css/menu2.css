@@ -469,12 +469,36 @@ li {
 
 	.footer {
 		width: 95%;
-		height: 800px;
+		height: 575px;
 		padding: 20px;
 	}
 
 	.footer-titles {
 		display: none;
+	}
+
+	.info {
+		position: absolute;
+		left: 400px;
+		top: 2110px;
+	}
+
+	.info3 {
+		position: absolute;
+		left: 400px;
+		top: 2332px;
+	}
+
+	.info4 {
+		position: absolute;
+		left: 400px;
+		top: 2463px;
+	}
+
+	.info5 {
+		position: absolute;
+		left: 400px;
+		top: 1010px;
 	}
 
 	.info2 {

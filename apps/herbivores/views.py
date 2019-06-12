@@ -41,8 +41,8 @@ def process_reservation(request):
 		return redirect('/reservations')
 
 	else:
-		firstname = request.POST['first_name']
-		lastname = request.POST['last_name']
+		firstname = request.POST['firstname']
+		lastname = request.POST['lastname']
 		email = request.POST['email']
 		phone = request.POST['phone']
 		party = request.POST['party']
@@ -54,7 +54,8 @@ def process_reservation(request):
 		print "email:", email
 		print "party:", party
 		print "date:", date
-		return redirect('/')
+		messages.success(request, "Reservation Recieved!")
+		return redirect('/reservations')
 
 def process_inquery(request):
 	errors = Query.objects.validate_query(request.POST)
@@ -65,8 +66,8 @@ def process_inquery(request):
 		return redirect('/contact')
 
 	else:
-		firstname = request.POST['first_name']
-		lastname = request.POST['last_name']
+		firstname = request.POST['firstname']
+		lastname = request.POST['lastname']
 		email = request.POST['email']
 		subject = request.POST['subject']
 		message = request.POST['message']
@@ -77,7 +78,8 @@ def process_inquery(request):
 		print "email:", email
 		print "subject:", subject
 		print "message:", message
-		return redirect('/')
+		messages.success(request, "Inquery Recieved!")
+		return redirect('/contact')
 
 def process_feedback(request):
 	errors = Feedback.objects.validate_feedback(request.POST)
@@ -88,11 +90,12 @@ def process_feedback(request):
 		return redirect('/contact')
 
 	else:
-		message = request.POST['message']
+		message = request.POST['feedback']
 		feedback = Feedback.objects.create(message=message)
 		print "Feedback created"
 		print "message:", message
-		return redirect('/')
+		messages.success(request, "Feedback Recieved!")
+		return redirect('/contact')
 
 
 def team(request):

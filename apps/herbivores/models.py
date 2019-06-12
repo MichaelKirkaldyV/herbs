@@ -8,12 +8,12 @@ class ReservationManager(models.Manager):
 		errors = {}
 
 		#validate firstname
-		if len(postData['first_name']) < 3:
-			errors['first_name'] = "First name must be longer than 3 characters"
+		if len(postData['firstname']) < 3:
+			errors['firstname'] = "First name must be longer than 3 characters"
 
 		#validate lastname
-		if len(postData['last_name']) < 3:
-			errors['last_name'] = "Last name must be longer than 3 characters"
+		if len(postData['lastname']) < 3:
+			errors['lastname'] = "Last name must be longer than 3 characters"
 
 		if len(postData['email']) < 3:
 			errors['email'] = "Last name must be longer than 3 characters"
@@ -27,8 +27,8 @@ class FeedbackManager(models.Manager):
 	def validate_feedback(request, postData):
 		errors = {}
 
-		if len(postData['message']) < 10:
-			errors['message'] = "Not enough characters in this message"
+		if len(postData['feedback']) < 10:
+			errors['feedback'] = "Not enough characters in this message"
 
 		return errors
 
@@ -36,11 +36,11 @@ class QueryManager(models.Manager):
 	def validate_query(request, postData):
 		errors = {}
 
-		if len(postData['first_name']) < 3:
-			errors['first_name'] = "First name must be longer than 3 characters"
+		if len(postData['firstname']) < 3:
+			errors['firstname'] = "First name must be longer than 3 characters"
 
-		if len(postData['last_name']) < 3:
-			errors['last_name'] = "Last name must be longer than 3 characters"
+		if len(postData['lastname']) < 3:
+			errors['lastname'] = "Last name must be longer than 3 characters"
 
 		if len(postData['email']) < 3:
 			errors['email'] = "Last name must be longer than 3 characters"
@@ -50,6 +50,8 @@ class QueryManager(models.Manager):
 
 		if len(postData['message']) < 10:
 			errors['message'] = "Message must be longer than 10 characters"
+
+		return errors
 
 
 class Reservation(models.Model):

@@ -221,6 +221,7 @@ li {
 
      .body {
      	width: 100%;
+     	height: 100%;
      }
 
      .footer {
@@ -266,6 +267,7 @@ li {
 
 	.body {
 		width: 100%;
+		height: 100%;
 	}
 
 	.footer {
@@ -297,11 +299,12 @@ li {
 
 	.body {
 		width: 100%;
+		height: 100%;
 	}
 
 	.footer {
 		width: 95%;
-		height: 785px;
+		height: 575px;
 		padding: 20px;
 	}
 
@@ -313,6 +316,12 @@ li {
 		font-size: 15px;
 		margin-left: 20px;
 		display: inline;
+	}
+
+	.info {
+		position: absolute;
+		left: 400px;
+		top: 2055px;
 	}
 
 	.title-photo {

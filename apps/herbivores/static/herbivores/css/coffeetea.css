@@ -348,12 +348,18 @@ li {
 
 	.footer {
 		width: 95%;
-		height: 800px;
+		height: 565px;
 		padding: 20px;
 	}
 
 	.footer-titles {
 		display: none;
+	}
+
+	.info {
+		position: absolute;
+		left: 400px;
+		top: 1170px;
 	}
 
 	.info2 {

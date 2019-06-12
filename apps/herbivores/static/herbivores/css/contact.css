@@ -139,6 +139,10 @@ input {
 	border: none;
 }
 
+div.errors {
+	margin-top: 25px;
+}
+
 /*----------------------------------FOOTER------------------------------------------------*/
 
 .footer {
@@ -425,13 +429,19 @@ li {
 
 	.footer {
 		width: 95%;
-		height: 800px;
+		height: 565px;
 		padding: 20px;
 		margin-top: 50px;
 	}
 
 	.footer-titles {
 		display: none;
+	}
+
+	.info {
+		position: absolute;
+		left: 400px;
+		top: 1470px;
 	}
 
 	.info2 {

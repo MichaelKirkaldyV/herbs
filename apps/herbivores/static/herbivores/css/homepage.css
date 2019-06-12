@@ -62,7 +62,7 @@ a {
 }
 
 .body1-image {
-	background-image: url('../images/food2.jpg');
+	background-image: url('../images/carrots.jpg');
 	background-size: cover;
 }
 
@@ -406,12 +406,18 @@ li {
 
 	.footer {
 		width: 95%;
-		height: 800px;
+		height: 565px;
 		padding: 20px;
 	}
 
 	.footer-titles {
 		display: none;
+	}
+
+	.info {
+		position: absolute;
+		left: 400px;
+		top: 1450px;
 	}
 
 	.info2 {

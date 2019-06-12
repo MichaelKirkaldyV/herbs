@@ -345,12 +345,19 @@ li {
 
 	.footer {
 		width: 95%;
-		height: 800px;
+		height: 565px;
 		padding: 20px;
+		margin-top: 10px;
 	}
 
 	.footer-titles {
 		display: none;
+	}
+
+	.info {
+		position: absolute;
+		left: 400px;
+		top: 3500px;
 	}
 
 	.info2 {

@@ -467,13 +467,19 @@ li {
 
 	.footer {
 		width: 95%;
-		height: 800px;
+		height: 575px;
 		padding: 20px;
 		margin-top: 50px;
 	}
 
 	.footer-titles {
 		display: none;
+	}
+
+	.info {
+		position: absolute;
+		left: 400px;
+		top: 1170px;
 	}
 
 	.info2 {
